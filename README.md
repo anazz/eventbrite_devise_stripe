@@ -2,6 +2,13 @@
 
 * Ruby version 2.3.4
 
+Sur Heroku, l'appli ne marche pas bien, 
+mais voici le lien tout de même: 
+
+https://whispering-dusk-87652.herokuapp.com/ 
+
+****************************************
+
 Pour tester l'appli n'hesites pas à créer des utilisateurs 
 où 
 d'utiliser les utilisateurs déjà existants
