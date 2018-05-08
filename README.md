@@ -5,26 +5,30 @@
 Sur Heroku, l'appli ne marche pas bien, 
 mais voici le lien tout de même: 
 
-https://whispering-dusk-87652.herokuapp.com/ 
+https://whispering-dusk-87652.herokuapp.com/
 
 ****************************************
 
-Pour tester l'appli n'hesites pas à créer des utilisateurs 
-où 
-d'utiliser les utilisateurs déjà existants
-où 
-les deux
+Pour tester l'appli n'hesites pas à créer des utilisateurs. 
+Leurs faire créer des événements.
+Je regrette ne pas avoir des seeds pour tester avec,
+mais j'ai fini le projet assez tard.
 
 *****************************************
 
-les login des utilisateurs déjà existants:
+Donc une façon de tester l'appli est:
 
-name: pheebs
-password: characters
+de créer un/des utilisateur
 
-name: rachel
-password: centralperk
+de créer des événements à partir de leur page
 
+ensuite quand tu clique sur 'Check out your events'
+il peut y avoir un bug avant que les events s'affichent, 
+donc refraîchie la page, clique sur 'My page' et encore
+sur 'Check out your events' et ça va marcher.(ou bien clique sur 'My page', 'Sign Out' et un nouveau 'Sign In')
+
+Après le Sign Out,
+n'hésites pas de cliquer sur 'Check out our events' sur la page d'accueil
 *****************************************
 
 
