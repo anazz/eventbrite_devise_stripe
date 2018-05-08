@@ -1,24 +1,38 @@
-# README
+# Bonjour cher correcteur,
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 2.3.4
 
-Things you may want to cover:
+Pour tester l'appli n'hesites pas à créer des utilisateurs 
+où 
+d'utiliser les utilisateurs déjà existants
+où 
+les deux
 
-* Ruby version
+*****************************************
 
-* System dependencies
+les login des utilisateurs déjà existants:
 
-* Configuration
+name: pheebs
+password: characters
 
-* Database creation
+name: rachel
+password: centralperk
 
-* Database initialization
+*****************************************
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+à partir de la page de l'utilisateur tu peut créer des événement
+une fois l'événement crée, 
+tu seras rediriger vers une autre page, où tu vas pouvoir suprimer 
+l'événement, retourner à la page de l'utilisateur, 
+mais le 'edit' ne marche pas.
 
-* Deployment instructions
 
-* ...
+Sur la page de l'utilisateur, tu peut voir les événements déjà crées par l'utilisateurs.
+
+Sur la page d'accueil de l'appli, tu peut voir tous les événements.
+
+Merci cher correcteur  💚 💙 💜 
+
+
+

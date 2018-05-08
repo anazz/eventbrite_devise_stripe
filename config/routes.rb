@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   get 'events/destroy'
   get 'events/show'
   
+  post "events/subscribe/:id", to: "events#subscribe", as: "event_subscription_path"
+  get "events/:event_id/:user_id", to: "events#adduser", as: "add_user_path"
+
   # get 'users/index'
   # get 'users/create'
   # get 'users/new'

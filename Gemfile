@@ -55,3 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+
+gem 'dotenv-rails'
+
+gem 'stripe'

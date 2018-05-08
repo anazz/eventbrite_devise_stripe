@@ -37,6 +37,40 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
+  def subscribe
+    @event = Event.find(params[:id])
+    if 
+      @event.user_attendees.include? current_user
+      flash[:error] = "Vous participez déjà à l'événement !" 
+      redirect_to @event
+      return  
+    end
+
+    # Amount in cents
+    @amount = @event.price
+
+    customer = Stripe::Customer.create(
+      :email => params[:stripeEmail],
+      :source  => params[:stripeToken]
+    )
+
+    charge = Stripe::Charge.create(
+      :customer    => customer.id,
+      :amount      => @amount,
+      :description => 'Rails Stripe customer',
+      :currency    => 'usd'
+    )
+
+    @event.user_attendees << current_user
+    flash[:success] = "Vous participez à l'événement !" 
+    redirect_to @event
+
+    rescue Stripe::CardError => e
+      flash[:error] = e.message
+      redirect_to @event
+
+  end
+
   def new
     @event = Event.new
   end
