@@ -1,0 +1,16 @@
+
+
+<h1>Event</h1>
+
+<div class = "event">
+	<h5>Description: <%= @event.description %></h5>
+  	<p>Place: <%= @event.place %></p>
+  	<p>Date <%= @event.date %></p>
+  	<p>created by: <%= current_user.name %></p>
+  	<%= link_to 'Back to profile', home_index_path, class: "btn btn-lg btn-primary" %>
+  	<%= link_to 'Edit', @event, method: :patch, class: "btn btn-lg btn-primary" %>
+  	<%= link_to 'Delete', @event, method: :delete, class: "btn btn-lg btn-primary" %>
+</div>
+<p>Find me in app/views/events/show.html.erb</p>
+
+            

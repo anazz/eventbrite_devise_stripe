@@ -1,0 +1,19 @@
+<h1>Welcome to Eventbrite</h1>
+
+<p>
+    <% if user_signed_in? %>
+    	<p>
+			<%= link_to 'Create an event', new_event_path %>
+		</p>
+		<p>
+			<%= link_to "Check out your events", "events#index" %>
+		</p>
+    <% else %>
+    	<p>New to Eventbrite? Here you can: <%= link_to 'Sign Up', new_user_registration_path %> to create and check out our events.</p></br>
+    	<%= link_to 'Check out our events', "events#index" %>
+	<% end %>
+</p>
+
+
+
+

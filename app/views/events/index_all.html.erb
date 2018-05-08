@@ -1,0 +1,8 @@
+<h1>The list of events</h1>
+
+<%= @events.each do |event| %>
+<h4><%= event.place %></h4>
+<p><%= event.description %></p>
+<p>The date: <%= event.date %></p>
+<% end %>
+<p>Find me in app/views/events/index.html.erb</p>

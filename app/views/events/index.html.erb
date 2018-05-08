@@ -1,0 +1,16 @@
+<h1>The list of events</h1>
+
+<%= @events.each do |event| %>
+<% if user_signed_in? %>
+<%= @creator_id = current_user.id %>
+<h4><%= event.place %></h4>
+<p><%= event.description %></p>
+<p>The date: <%= event.date %></p>
+<p>By: <%= current_user.name %></p>
+<% else %>
+<h4><%= event.place %></h4>
+<p><%= event.description %></p>
+<p>The date: <%= event.date %></p>
+<% end %>
+<% end %>
+<p>Find me in app/views/events/index.html.erb</p>
